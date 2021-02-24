@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <id>https://little1996.github.io/Blog/</id>
+    <id>https://little1996.github.io/Blog</id>
     <title>温故而知新</title>
-    <updated>2021-02-24T09:02:18.598Z</updated>
+    <updated>2021-02-24T09:05:45.423Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
-    <link rel="alternate" href="https://little1996.github.io/Blog/"/>
+    <link rel="alternate" href="https://little1996.github.io/Blog"/>
     <link rel="self" href="https://little1996.github.io/Blog/atom.xml"/>
     <subtitle>我希望如约而至的不仅是春天，还有你</subtitle>
     <logo>https://little1996.github.io/Blog/images/avatar.png</logo>
@@ -55,9 +55,9 @@
 <li>不用打开该工具，找到你下载好的深度系统的光盘镜像文件，选中右击弹出菜单，鼠标悬浮到UltraISO上然后选择“加载到驱动器”。</li>
 <li>这时你会发现在资源管理器的左边的计算机目录下多了一个<code>CD驱动器（）Deepin15.11</code>,然后点击进入。</li>
 <li>进到&quot;CD驱动器&quot;文件夹后，找到并双击<code>DEEPIN B.EXE</code>。这时可能会弹出制作窗口。<br>
-<img src="https://little1996.github.io/Blog//post-images/1614157227376.PNG" alt="" loading="lazy"></li>
+<img src="https://little1996.github.io/Blog/post-images/1614157227376.PNG" alt="" loading="lazy"></li>
 <li>选择镜像文件后，选择下一步。<br>
-<img src="https://little1996.github.io/Blog//post-images/1614157232501.PNG" alt="" loading="lazy"></li>
+<img src="https://little1996.github.io/Blog/post-images/1614157232501.PNG" alt="" loading="lazy"></li>
 <li>点击开始制作，等待制作完成。</li>
 </ul>
 <h2 id="最后">最后</h2>
