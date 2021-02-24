@@ -1,9 +1,11 @@
+
+<!DOCTYPE html>
 <html>
   <head>
     
 <meta charset="utf-8" >
 
-<title>温故而知新</title>
+<title>前端学习之原生JS实现attr方法的封装 | 温故而知新</title>
 <meta name="description" content="我希望如约而至的不仅是春天，还有你">
 
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
@@ -75,15 +77,73 @@
 </transition>
 
 
-        <div class="content-container">
+      <div class="content-container">
+        <div class="post-detail">
           
-          <div class="tags-container">
+          <h2 class="post-title">前端学习之原生JS实现attr方法的封装</h2>
+          <div class="post-info post-detail-info">
+            <span><i class="icon-calendar-outline"></i> 2021-02-24</span>
             
           </div>
+          <div class="post-content">
+            <p>HTML代码：</p>
+<pre><code class="language-html">&lt;img src=&quot;images/1.jpg&quot; alt=&quot;&quot;&gt;
+</code></pre>
+<p>JS代码：</p>
+<pre><code class="language-js">/*
+      功能：
+        1)参数为2个，设置
+        2)参数为1个
+            设置批量属性
+            获取属性
+    */
+    function attr(property,value){
+      // console.log(property,value)
+      //两个参数
+      if(value!=undefined){
+        obj[property]=value;
+      }else if(typeof property==='object'){
+        //批量设置属性   {src:'images/3.jpg',alt:'hello',title:'world'}
+        //遍历属性对象
+        for(var i in property){
+          // console.log(i,property[i]);
+          obj[i]=property[i];
+        }
+      }else{
+        //取出属性值
+        console.log(obj.getAttribute(property));
+      }
+      
+    }
 
+
+    // attr('src','images/2.jpg');
+    // attr({
+    //   src:'images/3.jpg',
+    //   alt:'hi',
+    //   title:'hello'
+    // });
+    attr('src');
+
+</code></pre>
+
+          </div>
         </div>
 
-        <div class="site-footer">
+        
+          <div class="next-post">
+            <a class="purple-link" href="https://little1996.github.io/post/jsRTRF7UK/">
+              <h3 class="post-title">
+                下一篇：windows系统下安装深度系统deepin
+              </h3>
+            </a>
+          </div>
+          
+      </div>
+
+      
+
+      <div class="site-footer">
   <div class="slogan">我希望如约而至的不仅是春天，还有你</div>
   <div class="social-container">
     
@@ -102,8 +162,8 @@
 </div>
 
 
-      </div>
-      <script type="application/javascript">
+    </div>
+    <script type="application/javascript">
 
 hljs.initHighlightingOnLoad()
 
@@ -119,6 +179,5 @@ var app = new Vue({
 
 
 
-    </div>
   </body>
 </html>

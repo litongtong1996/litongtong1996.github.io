@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://little1996.github.io</id>
     <title>温故而知新</title>
-    <updated>2021-02-24T09:15:05.760Z</updated>
+    <updated>2021-02-24T09:19:13.807Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://little1996.github.io"/>
     <link rel="self" href="https://little1996.github.io/atom.xml"/>
@@ -10,6 +10,54 @@
     <logo>https://little1996.github.io/images/avatar.png</logo>
     <icon>https://little1996.github.io/favicon.ico</icon>
     <rights>All rights reserved 2021, 温故而知新</rights>
+    <entry>
+        <title type="html"><![CDATA[前端学习之原生JS实现attr方法的封装]]></title>
+        <id>https://little1996.github.io/post/uuO_4NwO7/</id>
+        <link href="https://little1996.github.io/post/uuO_4NwO7/">
+        </link>
+        <updated>2021-02-24T09:18:06.000Z</updated>
+        <content type="html"><![CDATA[<p>HTML代码：</p>
+<pre><code class="language-html">&lt;img src=&quot;images/1.jpg&quot; alt=&quot;&quot;&gt;
+</code></pre>
+<p>JS代码：</p>
+<pre><code class="language-js">/*
+      功能：
+        1)参数为2个，设置
+        2)参数为1个
+            设置批量属性
+            获取属性
+    */
+    function attr(property,value){
+      // console.log(property,value)
+      //两个参数
+      if(value!=undefined){
+        obj[property]=value;
+      }else if(typeof property==='object'){
+        //批量设置属性   {src:'images/3.jpg',alt:'hello',title:'world'}
+        //遍历属性对象
+        for(var i in property){
+          // console.log(i,property[i]);
+          obj[i]=property[i];
+        }
+      }else{
+        //取出属性值
+        console.log(obj.getAttribute(property));
+      }
+      
+    }
+
+
+    // attr('src','images/2.jpg');
+    // attr({
+    //   src:'images/3.jpg',
+    //   alt:'hi',
+    //   title:'hello'
+    // });
+    attr('src');
+
+</code></pre>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[windows系统下安装深度系统deepin]]></title>
         <id>https://little1996.github.io/post/jsRTRF7UK/</id>
