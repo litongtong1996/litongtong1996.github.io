@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" >
 
-<title>Gridea</title>
+<title>前端学习之原生JS实现attr方法的封装 | Gridea</title>
 <meta name="description" content="温故而知新">
 
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
@@ -23,6 +23,7 @@
 
   </head>
   <body>
+  
     <nav class="navbar border fixed split-nav">
   <div class="nav-brand">
     <h3><a href="https://litongtong.github.io">Gridea</a></h3>
@@ -76,41 +77,66 @@
   </div>
 </nav>
 
-
     <div id="top" class="row site">
       <div class="sm-12 md-8 col">
         <div class="paper">
+          <article class="article">
+            <h1>前端学习之原生JS实现attr方法的封装</h1>
+            <p class="article-meta">
+              2021-02-24
+              
+            </p>
+            
+            <div class="post-content">
+              <p>HTML代码：</p>
+<pre><code class="language-html">&lt;img src=&quot;images/1.jpg&quot; alt=&quot;&quot;&gt;
+</code></pre>
+<p>JS代码：</p>
+<pre><code class="language-js">/*
+      功能：
+        1)参数为2个，设置
+        2)参数为1个
+            设置批量属性
+            获取属性
+    */
+    function attr(property,value){
+      // console.log(property,value)
+      //两个参数
+      if(value!=undefined){
+        obj[property]=value;
+      }else if(typeof property==='object'){
+        //批量设置属性   {src:'images/3.jpg',alt:'hello',title:'world'}
+        //遍历属性对象
+        for(var i in property){
+          // console.log(i,property[i]);
+          obj[i]=property[i];
+        }
+      }else{
+        //取出属性值
+        console.log(obj.getAttribute(property));
+      }
+      
+    }
+
+
+    // attr('src','images/2.jpg');
+    // attr({
+    //   src:'images/3.jpg',
+    //   alt:'hi',
+    //   title:'hello'
+    // });
+    attr('src');
+</code></pre>
+
+            </div>
+          </article>
+        </div>
+        <div class="paper" data-aos="fade-in">
           
-  <article class="article">
-    <h2 class="article-title">
-      <a href="https://litongtong.github.io/post/qian-duan-xue-xi-zhi-yuan-sheng-js-shi-xian-attr-fang-fa-de-feng-zhuang/">前端学习之原生JS实现attr方法的封装</a>
-    </h2>
-    <p class="article-meta">
-      2021-02-24
-      
-    </p>
-    <p class="text-lead">
-      
-    </p>
-    <div class="row">
-      <a href="https://litongtong.github.io/post/qian-duan-xue-xi-zhi-yuan-sheng-js-shi-xian-attr-fang-fa-de-feng-zhuang/" class="readmore-link">
-        <button>
-          Read More
-        </button>
-      </a>
-    </div>
-  </article>
-
-
         </div>
         
-        <div class="row flex-edges">
-  
-  
-</div>
-
       </div>
-      
+
       <div class="sm-12 md-4 col sidebar">
   <div class="paper info-container">
     <img src="https://litongtong.github.io/images/avatar.png?v=1614155433486" class="no-responsive avatar">
@@ -158,7 +184,9 @@
   </div>
 </div>
 
+
     </div>
+
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 
 <script type="application/javascript">
