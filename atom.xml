@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <id>https://litongtong.github.io</id>
+    <id>https://little1996.github.io/litongtong.github.io</id>
     <title>Gridea</title>
-    <updated>2021-02-24T08:41:33.882Z</updated>
+    <updated>2021-02-24T08:42:27.381Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
-    <link rel="alternate" href="https://litongtong.github.io"/>
-    <link rel="self" href="https://litongtong.github.io/atom.xml"/>
+    <link rel="alternate" href="https://little1996.github.io/litongtong.github.io"/>
+    <link rel="self" href="https://little1996.github.io/litongtong.github.io/atom.xml"/>
     <subtitle>温故而知新</subtitle>
-    <logo>https://litongtong.github.io/images/avatar.png</logo>
-    <icon>https://litongtong.github.io/favicon.ico</icon>
+    <logo>https://little1996.github.io/litongtong.github.io/images/avatar.png</logo>
+    <icon>https://little1996.github.io/litongtong.github.io/favicon.ico</icon>
     <rights>All rights reserved 2021, Gridea</rights>
     <entry>
         <title type="html"><![CDATA[前端学习之原生JS实现attr方法的封装]]></title>
-        <id>https://litongtong.github.io/post/qian-duan-xue-xi-zhi-yuan-sheng-js-shi-xian-attr-fang-fa-de-feng-zhuang/</id>
-        <link href="https://litongtong.github.io/post/qian-duan-xue-xi-zhi-yuan-sheng-js-shi-xian-attr-fang-fa-de-feng-zhuang/">
+        <id>https://little1996.github.io/litongtong.github.io/post/qian-duan-xue-xi-zhi-yuan-sheng-js-shi-xian-attr-fang-fa-de-feng-zhuang/</id>
+        <link href="https://little1996.github.io/litongtong.github.io/post/qian-duan-xue-xi-zhi-yuan-sheng-js-shi-xian-attr-fang-fa-de-feng-zhuang/">
         </link>
         <updated>2021-02-24T08:27:17.000Z</updated>
         <content type="html"><![CDATA[<p>HTML代码：</p>
