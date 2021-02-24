@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://little1996.github.io/Blog/</id>
     <title>温故而知新</title>
-    <updated>2021-02-24T08:56:11.792Z</updated>
+    <updated>2021-02-24T09:01:06.349Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://little1996.github.io/Blog/"/>
     <link rel="self" href="https://little1996.github.io/Blog/atom.xml"/>
@@ -11,50 +11,77 @@
     <icon>https://little1996.github.io/Blog/favicon.ico</icon>
     <rights>All rights reserved 2021, 温故而知新</rights>
     <entry>
-        <title type="html"><![CDATA[前端学习之原生JS实现attr方法的封装]]></title>
-        <id>https://little1996.github.io/Blog/post/qian-duan-xue-xi-zhi-yuan-sheng-js-shi-xian-attr-fang-fa-de-feng-zhuang/</id>
-        <link href="https://little1996.github.io/Blog/post/qian-duan-xue-xi-zhi-yuan-sheng-js-shi-xian-attr-fang-fa-de-feng-zhuang/">
+        <title type="html"><![CDATA[windows系统下安装深度系统deepin]]></title>
+        <id>https://little1996.github.io/Blog/post/jsRTRF7UK/</id>
+        <link href="https://little1996.github.io/Blog/post/jsRTRF7UK/">
         </link>
-        <updated>2021-02-24T08:27:17.000Z</updated>
-        <content type="html"><![CDATA[<p>HTML代码：</p>
-<pre><code class="language-html">&lt;img src=&quot;images/1.jpg&quot; alt=&quot;&quot;&gt;
-</code></pre>
-<p>JS代码：</p>
-<pre><code class="language-js">/*
-      功能：
-        1)参数为2个，设置
-        2)参数为1个
-            设置批量属性
-            获取属性
-    */
-    function attr(property,value){
-      // console.log(property,value)
-      //两个参数
-      if(value!=undefined){
-        obj[property]=value;
-      }else if(typeof property==='object'){
-        //批量设置属性   {src:'images/3.jpg',alt:'hello',title:'world'}
-        //遍历属性对象
-        for(var i in property){
-          // console.log(i,property[i]);
-          obj[i]=property[i];
-        }
-      }else{
-        //取出属性值
-        console.log(obj.getAttribute(property));
-      }
-      
-    }
-
-
-    // attr('src','images/2.jpg');
-    // attr({
-    //   src:'images/3.jpg',
-    //   alt:'hi',
-    //   title:'hello'
-    // });
-    attr('src');
-</code></pre>
+        <updated>2021-02-24T08:57:54.000Z</updated>
+        <content type="html"><![CDATA[<h2 id="前期准备">前期准备</h2>
+<ul>
+<li>DiskGenius（用来扩展分区）</li>
+<li>deepin-15.11-amd64.iso(深度系统镜像文件）</li>
+</ul>
+<h2 id="相关文件下载">相关文件下载</h2>
+<ul>
+<li>
+<p>首先下载安装时要用的工具，分别为:DiskGenius ,  UltraISO</p>
+</li>
+<li>
+<p>DiskGenius是磁盘工具，创建系统分区。</p>
+</li>
+<li>
+<p>UltraISO是用来打开系统光盘镜像文件工具。</p>
+</li>
+<li>
+<p>Win8/8.1/10无需下载UltraISO工具，Win8/8.1/10自带的资源管理器可以打开ISO文件。</p>
+</li>
+</ul>
+<h3 id="在深度系统官网下载">在深度系统官网下载。</h3>
+<ul>
+<li>进入官网后点击“下载”，网页跳转后点击“下载”。选择保存的位置，方便查找。</li>
+</ul>
+<h3 id="首先安装diskgenius">首先安装DiskGenius</h3>
+<ul>
+<li>安装后打开DiskGenius，看看哪个硬盘分区剩余的容量多些，就鼠标选中存储容量多的分区右击弹出菜单选择<code>拆分分区</code>。</li>
+<li></li>
+<li>弹出窗口后在<code>分区后部的空间</code>后面输入框内输入你新建分区的容量大小(注意：官方要求存储空间最小10GB）。我个人分的是50G，保证足够使用。</li>
+<li>输入完毕后点击<code>开始</code>。这时会弹出个确认对话框，点击<code>是</code>，</li>
+<li>创建分区完成后，点击<code>完成</code>关闭窗口。</li>
+<li>这时你会看到多了一个硬盘分区，在刚刚新建的分区右击弹出菜单，选择<code>转换为主分区</code>。系统会在后台自动操作。</li>
+<li>转换完成后在软件左上方点击“保存”按钮，然后关闭该软件。</li>
+</ul>
+<h3 id="安装ultraiso">安装UltraISO</h3>
+<ul>
+<li>不用打开该工具，找到你下载好的深度系统的光盘镜像文件，选中右击弹出菜单，鼠标悬浮到UltraISO上然后选择“加载到驱动器”。</li>
+<li>这时你会发现在资源管理器的左边的计算机目录下多了一个<code>CD驱动器（）Deepin15.11</code>,然后点击进入。</li>
+<li>进到&quot;CD驱动器&quot;文件夹后，找到并双击<code>DEEPIN B.EXE</code>。这时可能会弹出制作窗口。<br>
+<img src="https://little1996.github.io/Blog//post-images/1614157227376.PNG" alt="" loading="lazy"></li>
+<li>选择镜像文件后，选择下一步。<br>
+<img src="https://little1996.github.io/Blog//post-images/1614157232501.PNG" alt="" loading="lazy"></li>
+<li>点击开始制作，等待制作完成。</li>
+</ul>
+<h2 id="最后">最后</h2>
+<ul>
+<li>重启电脑，进入装机界面。</li>
+<li>选择语言（中文简体），创建用户并输入账户密码</li>
+<li>选择之前拆分出来的磁盘，进行安装。</li>
+<li>最后，等待安装完即可进入deepin系统了。</li>
+</ul>
+<h2 id="注意deepin系统安装之后有可能找不到win10的启动项本人电脑就出现了">注意：Deepin系统安装之后有可能找不到win10的启动项（本人电脑就出现了）</h2>
+<ul>
+<li>
+<p>出现的问题：</p>
+<ul>
+<li>在安装了最新的Deepin15.8系统之后，开机只有Deepin的启动项，找不到win10的启动项。</li>
+</ul>
+</li>
+<li>
+<p>解决方法：</p>
+<ul>
+<li>在Deepin终端输入sudo update-grub 即可，然后重启电脑，就可以在启动界面看到win10的启动项。</li>
+</ul>
+</li>
+</ul>
 ]]></content>
     </entry>
 </feed>
